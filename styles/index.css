@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.35)) no-repeat center center fixed, url('../assets/soldiers-2.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    text-align: center;
+}
+
+main p {
+    font-family: 'Cinzel', serif;
+    font-size: xx-large;
+    font-weight: 650;
+    margin: 2%;
+    color: var(--secondary);
+    text-shadow: 0px 0px 3px var(--secondary);
+}
+
+main h1 {
+    font-family: 'Tilt Prism';
+    color: var(--accent);
+    font-size: 400%;
+    background: linear-gradient(to right,#3570b4, #231b50, #5949a8);
+    background-size: 250% 250%;
+    -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+    background-clip: text;
+    animation: 8s h1-text-gradient infinite;
+}
+
+/* This allows for text shadow property without causing issues with the gradient text. */
+main h1::before {
+    font-family: 'Tilt Prism';
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0px 6px #401449;
+    content: 'Welcome to Exell Games';
+    position: absolute;
+    z-index: -1;  /* to be below the parent element */
+}
+
+
+@keyframes h1-text-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
