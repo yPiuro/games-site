@@ -6,7 +6,7 @@
     --primary: #082b77;
     --secondary: #041539;
     --accent: #1a5eef;
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -50,16 +50,17 @@ header a:hover {
     color: var(--accent);
     transition: all 0.3s ease 0s;
 }
+
 header figure img.logo-image {
     height: 3em;
     display: block;
+    transition: all 0.1s ease-in-out;
     margin: auto;
     border-radius: 100%;
 }
 
 header figure:hover img.logo-image {
     height: 3.15em;
-    transition: all 0.1s ease-in-out;
     outline: var(--accent) inset 2px;
     margin-bottom: 5px;
 }
@@ -88,7 +89,8 @@ footer p {
     margin-top: 1.15%;
 }
 
-footer p, footer span {
+footer p,
+footer span {
     margin-right: 2%;
 }
 
