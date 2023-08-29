@@ -1,9 +1,0 @@
-html {
-    background: linear-gradient(rgba(8, 43, 119, 0.137), rgb(26, 94, 239, 0.2)) no-repeat center center fixed, url('../assets/soldiers-2.png') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
